@@ -1,0 +1,36 @@
+
+.header{
+    text-align: center;
+    background-image: url('mountain.jpeg');
+    background-size: cover;
+}
+.blueBox{
+    height: 50px;
+    width: 420px;
+    background-color: blue;
+    text-align: start;
+
+     margin: auto;
+}
+
+.redBox{
+    height: 50px;
+    width: 420px;
+    background-color:red;
+    text-align: start;
+    margin: auto;
+
+}
+p{
+    text-align: start;
+    
+}
+
+
+.selection{
+    text-align: center;
+}
+
+.footer{
+    justify-content: space-between;
+}
