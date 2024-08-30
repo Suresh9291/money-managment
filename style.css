@@ -1,126 +1,129 @@
-
-#top{
-    
-    margin-bottom: 15px;
-    color:white;
-    
-}
-#total{
-    margin-bottom: 15px;
-    color:white;
-}
-.header{
-    text-align: center;
-    background-image: url('roadMountain.jpg');
-    background-size: cover;
-    height: 350px;
-}
-#blueBox{
-    height: 50px;
-    width: 420px;
-
-    text-align: start;
-
-     margin: auto;
-     display: block;
-     margin-bottom: 15px;
-     line-height: 2.2;
-    
-     
-   
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 500; /* Regular weight */
+  font-style: normal;
 }
 
-#redBox{
-    height: 50px;
-    width: 420px;
-   
-    text-align: start;
-    margin: auto;
-    line-height: 2.2;
-
-} 
-#incomeValue{
-float:right;
-background-color: rgb(13, 110, 253);
-color: aliceblue;
-border: 0px solid white;
+#top {
+  margin-top: 15px;
+  color: white;
 }
-#expensesValue{
-    float:right;  
-    margin-right: 3px; 
-    background-color:rgb(220, 53, 69);
-    
-color: aliceblue;
- border: 0px solid white; 
+#finalBalance {
+  margin-bottom: 15px;
+  color: white;
+  font-size: xx-large;
 }
-#percentageOfincome{
-    
-    float:right;  
-    margin-left: 3px; 
-    background-color:rgb(220, 53, 69);
-    color: aliceblue;
-   
-    border-color: transparent;
-     line-height: 2;
-    
-    
+.header {
+  text-align: center;
+  background-image: url("roadMountain.jpg");
+  background-size: cover;
+  height: 350px;
+}
+#blueBox {
+  height: 50px;
+  width: 420px;
 
+  text-align: start;
+
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  line-height: 2.2;
 }
 
-#description{
-width: 300px;
-}
-#value{
-    width: 75px;
+#redBox {
+  height: 50px;
+  width: 420px;
 
+  text-align: start;
+  margin: auto;
+  line-height: 2.2;
 }
-#checkCircle{
-    position: relative;
-    top: 5px;
-margin-left: 5px;
-color: green;
+#totalIncome {
+  float: right;
+  background-color: rgb(13, 110, 253);
+  color: aliceblue;
+  border: 0px solid white;
+}
+#totalExpense {
+  float: right;
+  margin-right: 3px;
+  background-color: rgb(220, 53, 69);
 
+  color: aliceblue;
+  border: 0px solid white;
 }
-.selection{
-    text-align: center;
-}
-#footer{
-    display: flex;
-   
-   justify-content: center;
+#percentageOfincome {
+  float: right;
+  margin-left: 3px;
+  background-color: rgb(220, 53, 69);
+  color: aliceblue;
+
+  border-color: transparent;
+  line-height: 2;
 }
 
-   #incomebox{
-    height: 30px;
-    width: 500px;
-    border: 2px solid black;
-    border-left:0px ;
-    border-right:0px ;
-    margin-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-   }
-   #expenseBox{
-    height: 30px;
-    width: 500px;
-    border: 2px solid black;
-    border-left:0px ;
-    border-right:0px ;
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   }
-.expenseList{
-    margin-left: 20px;
+#description {
+  width: 300px;
 }
-.lists{
-/* margin-top: 3px; */
-    height: 15px;
-    width: 30px;
-    border: 0px solid white;
 
-    
+#value {
+  width: 75px;
+}
+#checkCircle {
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+}
+.selection {
+  text-align: center;
+}
+#footer {
+  display: flex;
+
+  justify-content: center;
+}
+
+#incomeLists {
+  width: 500px;
+  border: 2px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+}
+#enteredIncome {
+  justify-content: end;
+}
+#enteredExpense {
+  justify-content: end;
+}
+
+#expenseLists {
+  /* height: 30px; */
+  width: 500px;
+  border: 2px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#checkCircle:hover {
+  cursor: pointer;
+}
+
+#incomeHeading {
+  color: #0d6efd;
+}
+#expenseHeading {
+  color: #dc3545;
+  margin-left: 20px;
 }
