@@ -2,7 +2,7 @@ let description = document.querySelector("#description");
 
 let enteredValue = document.querySelector("#enteredValue");
 
-let checkcircle = document.querySelector("#checkCircle");
+let checkCircle = document.querySelector("#checkCircle");
 
 let ul = document.querySelector("ul");
 
@@ -29,21 +29,18 @@ let label = document.querySelector("label");
 
 let inp = document.querySelector("input");
 
-// inp.addEventListener("focus", focusElement);
-// inp.addEventListener("blur", blurElement);
+function updateCircleColor() {
+  if (select.value === "EXPENSE-") {
+    checkCircle.style.color = "#dc3545";
+  } else {
+    checkCircle.style.color = "#0d6efd";
+  }
+}
+updateCircleColor();
 
-// function focusElement() {
-//   if (select.innerText === "INCOME+") {
-//     inp.style.borderColor = "blue";
-//   } else if (select.value === "EXPENSES-") {
-//     inp.style.borderColor = "red";
-//   }
-// }
-// function blurElement() {
-//   inp.style.borderColor = "black";
-// }
+select.addEventListener("change", updateCircleColor);
 
-checkcircle.addEventListener("click", function () {
+checkCircle.addEventListener("click", function () {
   let expense = parseFloat(totalExpense.innerText) || 0;
   let amount = parseFloat(enteredValue.value) || 0;
   let income = parseFloat(totalIncome.innerText) || 0;
@@ -54,12 +51,6 @@ checkcircle.addEventListener("click", function () {
     enteredValue.focus();
 
     return;
-  }
-
-  if (select.value === "EXPENSE-") {
-    checkcircle.style.color = "#dc3545";
-  } else {
-    checkcircle.style.color = "#0d6efd";
   }
 
   if (select.value === "INCOME+") {
