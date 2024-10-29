@@ -9,6 +9,7 @@ let ul = document.querySelector("ul");
 let select = document.querySelector("select");
 
 let incomeDescription = document.querySelector("#incomeDescription");
+
 let expenseDescription = document.querySelector("#expenseDescription");
 
 let enteredIncome = document.querySelector("#enteredIncome");
@@ -28,6 +29,7 @@ let percentageOfincome = document.querySelector("#percentageOfincome");
 let label = document.querySelector("label");
 
 let inp = document.querySelector("input");
+let dark = document.querySelector("dark_mode");
 
 function updateCircleColor() {
   if (select.value === "EXPENSE-") {
@@ -76,8 +78,7 @@ checkCircle.addEventListener("click", function () {
     let listAmount2 = document.createElement("p");
     listAmount2.innerText = enteredValue.value;
     enteredExpense.appendChild(listAmount2);
-    listAmount2.innerText = amount;
-    enteredExpense.appendChild(listAmount2);
+
     expense -= amount;
     totalExpense.innerText = expense.toFixed(2);
     Balance -= amount;
